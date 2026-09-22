@@ -1,0 +1,1289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anita's Baby Sitting and Day Care | Warm Home-Based Child Care</title>
+
+    <meta name="description"
+        content="Anita's Baby Sitting and Day Care offers warm, personal, home-based child care with 20 years of trusted experience.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                    colors: {
+                        cream: "#FFF8ED",
+                        warmYellow: "#FFE7A3",
+                        warmTeal: "#67C4BA",
+                        softCoral: "#FF8E7F",
+                        ink: "#334155",
+                        skySoft: "#EAF8FF"
+                    },
+
+                    boxShadow: {
+                        soft: "0 10px 30px rgba(0,0,0,.08)",
+                        glow: "0 0 0 6px rgba(103,196,186,.15)"
+                    },
+
+                    keyframes: {
+
+                        float: {
+                            "0%,100%": {
+                                transform: "translateY(0px)"
+                            },
+
+                            "50%": {
+                                transform: "translateY(-10px)"
+                            }
+                        },
+
+                        pulseSoft: {
+
+                            "0%,100%": {
+                                transform: "scale(1)",
+                                opacity: .9
+                            },
+
+                            "50%": {
+                                transform: "scale(1.05)",
+                                opacity: 1
+                            }
+
+                        },
+
+                        fadeUp: {
+
+                            "0%": {
+                                opacity: 0,
+                                transform: "translateY(18px)"
+                            },
+
+                            "100%": {
+                                opacity: 1,
+                                transform: "translateY(0)"
+                            }
+
+                        }
+
+                    },
+
+                    animation: {
+
+                        float: "float 4s ease-in-out infinite",
+                        pulseSoft: "pulseSoft 4s ease-in-out infinite",
+                        fadeUp: "fadeUp .7s ease forwards"
+
+                    }
+
+                }
+            }
+        };
+    </script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="bg-cream text-ink selection:bg-teal-200/60">
+
+    <!-- =======================================================
+                            HEADER
+    ======================================================== -->
+
+    <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur-lg border-b border-amber-100 shadow-sm">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+
+            <!-- Logo + Title -->
+
+            <div class="flex items-center gap-4">
+
+                <img
+                    src="images/logo.png"
+                    alt="Anita Day Care Logo"
+                    class="h-16 w-16 md:h-20 md:w-20 rounded-full object-cover shadow-md">
+
+                <div>
+
+                    <h1 class="text-2xl md:text-4xl lg:text-5xl font-black leading-tight text-teal-700">
+
+                        Anita's Baby Sitting
+                        <br>
+                        <span class="text-slate-700">
+                            and Day Care
+                        </span>
+
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <!-- Desktop Action Buttons -->
+
+            <div class="hidden lg:flex items-center gap-3">
+
+                <a href="#contact"
+                    class="px-5 py-3 rounded-xl bg-teal-600 text-white font-semibold hover:bg-teal-700 transition shadow-soft">
+
+                    Enquire Now
+
+                </a>
+
+                <a href="tel:+919320533399"
+                    class="px-5 py-3 rounded-xl border border-slate-300 bg-white font-semibold hover:shadow-glow transition">
+
+                    📞 Call
+
+                </a>
+
+                <a href="https://wa.me/919320533399?text=Hello%2C%20I%20am%20interested%20in%20Anita%27s%20Baby%20Sitting%20and%20Day%20Care."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="px-5 py-3 rounded-xl bg-green-600 text-white font-semibold hover:bg-green-700 transition">
+
+                    💬 WhatsApp
+
+                </a>
+
+            </div>
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                id="menuBtn"
+                class="md:hidden border border-amber-300 px-3 py-2 rounded-lg">
+
+                ☰
+
+            </button>
+
+        </div>
+
+        <!-- Navigation -->
+
+        <nav class="border-t border-amber-100 bg-white">
+
+            <ul class="hidden md:flex justify-center gap-8 py-4 text-sm font-semibold">
+
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#care">Care Style</a></li>
+                <li><a class="nav-link" href="#experience">Experience</a></li>
+                <li><a class="nav-link" href="#testimonials">Reviews</a></li>
+                <li><a class="nav-link" href="#faq">FAQ</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+
+            </ul>
+
+            <!-- Mobile Menu -->
+
+            <ul id="mobileMenu"
+                class="hidden md:hidden px-4 pb-4 pt-2 space-y-3 text-sm font-medium bg-white">
+
+                <li><a class="nav-link block" href="#home">Home</a></li>
+                <li><a class="nav-link block" href="#about">About</a></li>
+                <li><a class="nav-link block" href="#care">Care Style</a></li>
+                <li><a class="nav-link block" href="#experience">Experience</a></li>
+                <li><a class="nav-link block" href="#testimonials">Reviews</a></li>
+                <li><a class="nav-link block" href="#faq">FAQ</a></li>
+                <li><a class="nav-link block" href="#contact">Contact</a></li>
+
+                <li class="pt-2 border-t">
+
+                    <a href="#contact"
+                        class="block text-center bg-teal-600 text-white py-2 rounded-lg">
+
+                        Enquire Now
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="tel:+919320533399"
+                        class="block text-center bg-blue-600 text-white py-2 rounded-lg">
+
+                        📞 Call Now
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="https://wa.me/919320533399"
+                        target="_blank"
+                        class="block text-center bg-green-600 text-white py-2 rounded-lg">
+
+                        💬 WhatsApp
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+    <!-- =======================================================
+                        HERO SECTION
+    ======================================================== -->
+
+    <section id="home" class="relative overflow-hidden">
+
+        <!-- Background Decorative Blobs -->
+
+        <div
+            class="absolute -top-24 -left-20 w-72 h-72 bg-warmYellow/60 rounded-full blur-3xl animate-pulseSoft">
+        </div>
+
+        <div
+            class="absolute top-24 -right-16 w-80 h-80 bg-warmTeal/40 rounded-full blur-3xl animate-pulseSoft">
+        </div>
+
+        <div
+            class="absolute bottom-0 left-1/3 w-80 h-80 bg-softCoral/30 rounded-full blur-3xl animate-pulseSoft">
+        </div>
+
+
+        <!-- ===================================================
+                        DAYCARE BANNER IMAGE
+        ==================================================== -->
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 mt-10 reveal">
+
+            <img
+                src="images/banner.png"
+                alt="Anita Day Care Banner"
+                class="w-full rounded-3xl shadow-soft border border-amber-100 object-cover">
+
+        </div>
+
+
+        <!-- ===================================================
+                        HERO CONTENT
+        ==================================================== -->
+
+        <div
+            class="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24 grid lg:grid-cols-2 gap-10 items-center">
+
+
+            <!-- ================= LEFT ================= -->
+
+            <div class="opacity-0 animate-fadeUp">
+
+                <span
+                    class="inline-flex items-center px-4 py-2 rounded-full bg-white border border-amber-200 text-sm font-semibold text-teal-700 shadow-soft">
+
+                    Home-Based • Trusted • 20 Years Experience
+
+                </span>
+
+
+                <h2
+                    class="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+
+                    A Loving Home
+                    <br>
+
+                    <span class="text-teal-700">
+                        Away From Home
+                    </span>
+
+                </h2>
+
+
+                <p
+                    class="mt-6 text-lg text-slate-600 max-w-xl leading-relaxed">
+
+                    Welcome to
+
+                    <strong>
+                        Anita's Baby Sitting and Day Care
+                    </strong>
+
+                    — where children feel safe,
+                    cared for,
+                    and free to grow in a warm,
+                    loving and comfortable home
+                    environment.
+
+                </p>
+
+
+                <!-- ================= STATISTICS ================= -->
+
+                <div
+                    class="mt-10 grid grid-cols-3 gap-4 max-w-xl">
+
+                    <div
+                        class="bg-white rounded-2xl border border-amber-100 p-5 text-center shadow-soft hover:-translate-y-1 transition">
+
+                        <p
+                            class="counter text-3xl font-black text-teal-700"
+                            data-target="20">
+
+                            0
+
+                        </p>
+
+                        <p
+                            class="text-sm text-slate-500 mt-2">
+
+                            Years Experience
+
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="bg-white rounded-2xl border border-amber-100 p-5 text-center shadow-soft hover:-translate-y-1 transition">
+
+                        <p
+                            class="text-3xl font-black text-teal-700">
+
+                            8AM–8PM
+
+                        </p>
+
+                        <p
+                            class="text-sm text-slate-500 mt-2">
+
+                            Operating Hours
+
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="bg-white rounded-2xl border border-amber-100 p-5 text-center shadow-soft hover:-translate-y-1 transition">
+
+                        <p
+                            class="text-3xl font-black text-teal-700">
+
+                            1:1
+
+                        </p>
+
+                        <p
+                            class="text-sm text-slate-500 mt-2">
+
+                            Personal Attention
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= RIGHT CARD ================= -->
+
+            <div
+                class="opacity-0 animate-fadeUp [animation-delay:.15s]">
+
+                <div
+                    class="bg-white/80 backdrop-blur-xl rounded-3xl border border-white shadow-soft p-8">
+
+                    <h3
+                        class="text-2xl font-bold">
+
+                        Why Parents Feel Comfortable Here
+
+                    </h3>
+
+
+                    <ul
+                        class="mt-6 space-y-5 text-slate-700">
+
+                        <li
+                            class="flex gap-3 hover:translate-x-1 transition">
+
+                            💛
+                            <span>
+                                Warm and caring home atmosphere
+                            </span>
+
+                        </li>
+
+                        <li
+                            class="flex gap-3 hover:translate-x-1 transition">
+
+                            🧸
+                            <span>
+                                Flexible child-friendly daily routine
+                            </span>
+
+                        </li>
+
+                        <li
+                            class="flex gap-3 hover:translate-x-1 transition">
+
+                            👀
+                            <span>
+                                Close and attentive supervision
+                            </span>
+
+                        </li>
+
+                        <li
+                            class="flex gap-3 hover:translate-x-1 transition">
+
+                            📲
+                            <span>
+                                Easy communication with Anita
+                            </span>
+
+                        </li>
+
+                        <li
+                            class="flex gap-3 hover:translate-x-1 transition">
+
+                            ❤️
+                            <span>
+                                Safe, loving and trusted environment
+                            </span>
+
+                        </li>
+
+                    </ul>
+
+                    <div
+                        class="mt-8 bg-teal-50 rounded-xl p-4 text-center">
+
+                        <p
+                            class="font-semibold text-teal-700">
+
+                            Monday – Saturday
+
+                        </p>
+
+                        <p
+                            class="text-slate-600">
+
+                            8:00 AM – 8:00 PM
+
+                        </p>
+
+                        <p
+                            class="text-red-500 font-medium mt-1">
+
+                            Sunday Closed
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
+                            ABOUT SECTION
+    ======================================================== -->
+
+    <section
+        id="about"
+        class="py-20 bg-white">
+
+        <div
+            class="max-w-6xl mx-auto px-4 sm:px-6">
+
+            <div
+                class="reveal">
+
+                <h2
+                    class="text-4xl font-black">
+
+                    About Anita's Day Care
+
+                </h2>
+
+                <p
+                    class="mt-6 text-slate-600 leading-relaxed max-w-4xl">
+
+                    Anita's Baby Sitting and Day Care is a warm,
+                    welcoming,
+                    home-based child care centre dedicated to
+                    providing a safe,
+                    comfortable and loving environment for children.
+
+                </p>
+
+                <p
+                    class="mt-4 text-slate-600 leading-relaxed max-w-4xl">
+
+                    With more than
+                    <strong>20 years of experience</strong>,
+                    Anita has cared for children with patience,
+                    kindness,
+                    and personal attention,
+                    making every child feel at home while giving
+                    parents complete peace of mind.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+  <!-- =======================================================
+                        CARE STYLE
+  ======================================================== -->
+
+  <section id="care" class="py-16">
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+      <div class="reveal text-center">
+
+        <h2 class="text-3xl md:text-4xl font-black">
+          Our Care Style
+        </h2>
+
+        <p class="mt-3 text-slate-600 max-w-2xl mx-auto">
+          Every child deserves individual attention, a peaceful
+          environment, and a place where learning naturally blends
+          with fun and comfort.
+        </p>
+
+      </div>
+
+
+      <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+
+        <article class="feature-card reveal">
+
+          <div class="text-5xl">
+            🏠
+          </div>
+
+          <h3 class="mt-5 text-xl font-bold">
+            Home Comfort First
+          </h3>
+
+          <p class="mt-3 text-slate-600 leading-relaxed">
+            A peaceful home environment where every child feels
+            welcomed, relaxed and emotionally secure throughout
+            the day.
+          </p>
+
+        </article>
+
+
+        <!-- Card 2 -->
+
+        <article class="feature-card reveal">
+
+          <div class="text-5xl">
+            🫶
+          </div>
+
+          <h3 class="mt-5 text-xl font-bold">
+            Personalized Care
+          </h3>
+
+          <p class="mt-3 text-slate-600 leading-relaxed">
+            Each child receives personal attention based on
+            age, routine, comfort level and individual needs.
+          </p>
+
+        </article>
+
+
+        <!-- Card 3 -->
+
+        <article class="feature-card reveal">
+
+          <div class="text-5xl">
+            🧸
+          </div>
+
+          <h3 class="mt-5 text-xl font-bold">
+            Play & Creativity
+          </h3>
+
+          <p class="mt-3 text-slate-600 leading-relaxed">
+            Children enjoy storytelling, drawing,
+            creative activities and free play that
+            encourage imagination and confidence.
+          </p>
+
+        </article>
+
+
+        <!-- Card 4 -->
+
+        <article class="feature-card reveal">
+
+          <div class="text-5xl">
+            🍱
+          </div>
+
+          <h3 class="mt-5 text-xl font-bold">
+            Healthy Food Routine
+          </h3>
+
+          <p class="mt-3 text-slate-600 leading-relaxed">
+            Parents may provide meals and snacks,
+            ensuring children enjoy familiar food
+            while maintaining their regular routine.
+          </p>
+
+        </article>
+
+
+        <!-- Card 5 -->
+
+        <article class="feature-card reveal">
+
+          <div class="text-5xl">
+            😴
+          </div>
+
+          <h3 class="mt-5 text-xl font-bold">
+            Comfortable Rest Time
+          </h3>
+
+          <p class="mt-3 text-slate-600 leading-relaxed">
+            Rest schedules are flexible and based on
+            every child's comfort rather than a strict
+            timetable.
+          </p>
+
+        </article>
+
+
+        <!-- Card 6 -->
+
+        <article class="feature-card reveal">
+
+          <div class="text-5xl">
+            📲
+          </div>
+
+          <h3 class="mt-5 text-xl font-bold">
+            Parent Communication
+          </h3>
+
+          <p class="mt-3 text-slate-600 leading-relaxed">
+            Parents can easily connect through
+            phone or WhatsApp whenever updates
+            or communication are needed.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =======================================================
+                        EXPERIENCE
+  ======================================================== -->
+
+  <section
+      id="experience"
+      class="py-20 bg-white">
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+      <div class="text-center reveal">
+
+        <h2 class="text-3xl md:text-4xl font-black">
+          Why Families Trust Anita
+        </h2>
+
+        <p class="mt-3 text-slate-600 max-w-2xl mx-auto">
+          More than two decades of caring for children
+          with patience, responsibility and genuine affection.
+        </p>
+
+      </div>
+
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <div class="value-tile bg-amber-50 reveal">
+
+          💛
+
+          <p class="mt-3 font-bold">
+            20+ Years of Experience
+          </p>
+
+        </div>
+
+
+        <div class="value-tile bg-teal-50 reveal">
+
+          👀
+
+          <p class="mt-3 font-bold">
+            Safe Home Environment
+          </p>
+
+        </div>
+
+
+        <div class="value-tile bg-rose-50 reveal">
+
+          🤝
+
+          <p class="mt-3 font-bold">
+            Loving Personal Care
+          </p>
+
+        </div>
+
+
+        <div class="value-tile bg-skySoft reveal">
+
+          📲
+
+          <p class="mt-3 font-bold">
+            Easy Parent Communication
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- =======================================================
+                        TESTIMONIALS
+  ======================================================== -->
+
+  <section
+      id="testimonials"
+      class="py-20">
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+      <div class="text-center reveal">
+
+        <h2 class="text-3xl md:text-4xl font-black">
+          What Parents Say
+        </h2>
+
+        <p class="mt-3 text-slate-600">
+          Trusted by families for over 20 years.
+        </p>
+
+      </div>
+
+
+      <div class="swiper mt-12 reveal">
+
+        <div class="swiper-wrapper">
+
+          <!-- Review 1 -->
+
+          <div class="swiper-slide">
+
+            <div class="review-card">
+
+              <p>
+
+                "I totally recommend this daycare.
+                Anita took care of my daughter
+                like her own. The atmosphere is
+                warm, loving and very homely.
+                My child always looked forward
+                to spending time here."
+
+              </p>
+
+              <div class="mt-6">
+
+                <h4 class="font-bold text-teal-700">
+                  Parent Review
+                </h4>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Review 2 -->
+
+          <div class="swiper-slide">
+
+            <div class="review-card">
+
+              <p>
+
+                "It was a wonderful experience.
+                Anita is caring, patient and
+                understands every child's needs.
+                We always felt comfortable and
+                informed."
+
+              </p>
+
+              <div class="mt-6">
+
+                <h4 class="font-bold text-teal-700">
+                  Parent Review
+                </h4>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Review 3 -->
+
+          <div class="swiper-slide">
+
+            <div class="review-card">
+
+              <p>
+
+                "Our child always came home
+                smiling. We appreciate the
+                love, patience and attention
+                given every single day."
+
+              </p>
+
+              <div class="mt-6">
+
+                <h4 class="font-bold text-teal-700">
+                  Parent Review
+                </h4>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="swiper-pagination mt-8"></div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+ <!-- =======================================================
+                        FAQ
+======================================================== -->
+
+<section id="faq" class="py-20 bg-white">
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+
+        <div class="text-center reveal">
+
+            <h2 class="text-3xl md:text-4xl font-black">
+                Frequently Asked Questions
+            </h2>
+
+            <p class="mt-3 text-slate-600">
+                Answers to some common questions parents usually ask.
+            </p>
+
+        </div>
+
+        <div class="mt-10 space-y-4 reveal">
+
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+
+                <button class="faq-btn">
+                    <span>What age group do you accept?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-content">
+                    <p>
+                        We provide care for children from approximately
+                        <strong>5 months to 12 years</strong>.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+
+                <button class="faq-btn">
+                    <span>What are your working hours?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-content">
+                    <p>
+                        We are open Monday to Saturday from
+                        <strong>8:00 AM to 8:00 PM</strong>.
+                        Sunday remains closed.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+
+                <button class="faq-btn">
+                    <span>Do parents provide meals?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-content">
+                    <p>
+                        Yes. Parents may send meals and snacks according
+                        to their child's routine and preferences.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+
+                <button class="faq-btn">
+                    <span>How can I contact Anita?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-content">
+                    <p>
+                        You can contact Anita through Phone,
+                        WhatsApp or the enquiry form.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+  <!-- =======================================================
+                          CONTACT
+  ======================================================== -->
+
+  <section
+      id="contact"
+      class="py-20">
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10">
+
+      <!-- ==========================
+            LEFT INFORMATION
+      =========================== -->
+
+      <div class="reveal">
+
+        <h2 class="text-3xl md:text-4xl font-black">
+          Get in Touch
+        </h2>
+
+        <p class="mt-4 text-slate-600 leading-relaxed">
+
+          We'd love to hear from you.
+          Fill in the enquiry form or
+          reach Anita directly through
+          WhatsApp or a phone call.
+
+        </p>
+
+
+        <!-- Quick Buttons -->
+
+       <div class="mt-5 flex flex-wrap gap-3">
+
+    <a href="tel:+919320533399"
+       class="bg-blue-600 text-white px-5 py-3 rounded-xl font-semibold hover:bg-blue-700 transition">
+        📞 Call Now
+    </a>
+
+    <a href="https://wa.me/919320533399?text=Hello%2C%20I%20am%20interested%20in%20Anita%27s%20Baby%20Sitting%20and%20Day%20Care."
+       target="_blank"
+       rel="noopener noreferrer"
+       class="bg-green-600 text-white px-5 py-3 rounded-xl font-semibold hover:bg-green-700 transition">
+        💬 WhatsApp
+    </a>
+
+    <a href="mailto:abrijks07@gmail.com?subject=Inquiry%20for%20Anita%27s%20Baby%20Sitting%20and%20Day%20Care"
+       class="bg-red-500 text-white px-5 py-3 rounded-xl font-semibold hover:bg-red-600 transition">
+        ✉️ Email
+    </a>
+
+</div>
+
+
+
+        <!-- Business Details -->
+
+       <div class="mt-6 text-sm space-y-2">
+
+    <p>
+        <strong>Hours:</strong>
+        8:00 AM – 8:00 PM (Sunday Closed)
+    </p>
+
+    <p>
+        <strong>Location:</strong>
+
+        <a href="https://maps.google.com/?q=D-702,Keshav+Kunj+1,+Near+Sanpada+Railway+Station,+Sector+30A,+Vashi,+Navi+Mumbai,+Maharashtra+400705"
+           target="_blank"
+           class="text-teal-700 underline">
+
+            D-702, Keshav Kunj 1,
+            Near Sanpada Railway Station,
+            Sector 30A,
+            Vashi,
+            Navi Mumbai,
+            Maharashtra 400705
+
+        </a>
+
+    </p>
+
+</div>
+
+            
+</div>
+
+</div>
+
+
+
+      <!-- ==========================
+            ENQUIRY FORM
+      =========================== -->
+
+      <div
+          class="bg-white rounded-3xl shadow-soft border border-amber-100 p-8 reveal">
+
+        <h3 class="text-2xl font-bold">
+
+          Send an Enquiry
+
+        </h3>
+
+        <p class="mt-2 text-slate-500">
+
+          We'll get back to you as soon as possible.
+
+        </p>
+
+
+        <form
+            id="contactForm"
+            class="mt-8 space-y-4">
+
+          <input
+              type="hidden"
+              name="access_key"
+              value="YOUR_WEB3FORMS_ACCESS_KEY">
+
+          <input
+              type="hidden"
+              name="subject"
+              value="New Day Care Enquiry">
+
+
+
+          <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Parent Name"
+              required
+              class="w-full rounded-xl border border-slate-300 px-4 py-3">
+
+
+          <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email Address"
+              required
+              class="w-full rounded-xl border border-slate-300 px-4 py-3">
+
+
+          <input
+              id="childAge"
+              name="child_age"
+              type="text"
+              placeholder="Child Age"
+              required
+              class="w-full rounded-xl border border-slate-300 px-4 py-3">
+
+
+          <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="Phone Number"
+              class="w-full rounded-xl border border-slate-300 px-4 py-3">
+
+
+          <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="Tell us about your enquiry..."
+              class="w-full rounded-xl border border-slate-300 px-4 py-3"></textarea>
+
+
+
+          <div class="flex flex-col sm:flex-row gap-3">
+
+            <button
+                type="submit"
+                class="flex-1 rounded-xl bg-softCoral text-white py-3 font-semibold hover:opacity-90 transition">
+
+              Send Enquiry
+
+            </button>
+
+
+            <button
+                type="button"
+                id="sendWhatsAppForm"
+                class="flex-1 rounded-xl bg-green-600 text-white py-3 font-semibold hover:bg-green-700 transition">
+
+              Send via WhatsApp
+
+            </button>
+
+          </div>
+
+          <p
+              id="formStatus"
+              class="text-sm mt-3"></p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =======================================================
+                          FOOTER
+  ======================================================== -->
+
+  <footer
+      class="bg-white border-t border-amber-100 py-10">
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+      <div class="text-center">
+
+        <h3 class="text-xl font-bold text-teal-700">
+
+          Anita's Baby Sitting and Day Care
+
+        </h3>
+
+        <p class="mt-3 text-slate-600">
+
+          A loving home away from home.
+
+        </p>
+
+        <p class="mt-6 text-sm text-slate-500">
+
+          © <span id="year"></span>
+
+          Anita's Baby Sitting and Day Care.
+
+          All Rights Reserved.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- Floating Buttons -->
+
+  <a
+      href="tel:+919320533399"
+      class="fixed bottom-24 right-5 w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center shadow-xl hover:scale-110 transition z-50">
+
+      📞
+
+  </a>
+
+  <a
+      href="https://wa.me/919320533399"
+      target="_blank"
+      class="fixed bottom-6 right-5 w-14 h-14 rounded-full bg-green-600 text-white flex items-center justify-center shadow-xl hover:scale-110 transition z-50">
+
+      💬
+
+  </a>
+
+
+
+  <!-- Swiper -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Custom Script -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
